@@ -1,0 +1,220 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/StackSection.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=e7832f65"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=e7832f65";
+import { systemSignals, stackGroups } from "/src/data/portfolio.ts";
+import SectionHeading from "/src/components/SectionHeading.tsx?t=1779179955752";
+export default function StackSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "system", className: "section-pad relative overflow-hidden py-12 sm:py-28", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_22%,rgba(125,211,252,.1),transparent_28rem),radial-gradient(circle_at_80%_64%,rgba(216,168,78,.12),transparent_30rem)]" }, void 0, false, {
+      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+      lineNumber: 27,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-7xl", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "mb-8 grid gap-6 sm:mb-14 sm:gap-8 lg:grid-cols-[.95fr_1.05fr] lg:items-end", children: [
+        /* @__PURE__ */ jsxDEV(
+          SectionHeading,
+          {
+            eyebrow: "System stack",
+            title: "A frontend surface with automation logic behind it.",
+            description: "The portfolio is structured to communicate a specific builder profile: product UI, Telegram systems, Python workflows, data persistence and deployment discipline."
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+            lineNumber: 30,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV("div", { className: "border-y border-bone/10 py-3", children: /* @__PURE__ */ jsxDEV("div", { className: "grid gap-2 md:grid-cols-2", children: systemSignals.map((signal) => {
+          const Icon = signal.icon;
+          return /* @__PURE__ */ jsxDEV(
+            "div",
+            {
+              className: "flex min-w-0 items-center gap-2 px-1 py-2 sm:gap-3",
+              children: [
+                /* @__PURE__ */ jsxDEV(Icon, { size: 15, className: "shrink-0 text-gold" }, void 0, false, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                  lineNumber: 44,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "min-w-0 truncate font-mono text-[9px] uppercase tracking-[0.16em] text-muted sm:text-[10px] sm:tracking-[0.18em]", children: signal.label }, void 0, false, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                  lineNumber: 45,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "shrink-0 text-xs text-bone sm:text-sm", children: signal.value }, void 0, false, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                  lineNumber: 46,
+                  columnNumber: 21
+                }, this)
+              ]
+            },
+            signal.label,
+            true,
+            {
+              fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+              lineNumber: 40,
+              columnNumber: 19
+            },
+            this
+          );
+        }) }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+          lineNumber: 36,
+          columnNumber: 13
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+          lineNumber: 35,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+        lineNumber: 29,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "relative overflow-hidden border-y border-bone/10", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 bg-[linear-gradient(90deg,rgba(246,239,229,.04)_1px,transparent_1px),linear-gradient(rgba(246,239,229,.035)_1px,transparent_1px)] bg-[length:5rem_5rem]" }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+          lineNumber: 55,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "relative grid divide-y divide-bone/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0", children: stackGroups.map((group, index) => {
+          const Icon = group.icon;
+          return /* @__PURE__ */ jsxDEV(
+            motion.div,
+            {
+              initial: { opacity: 0, y: 40 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true, margin: "-90px" },
+              transition: { delay: index * 0.08, duration: 0.72, ease: [0.22, 1, 0.36, 1] },
+              className: "group min-h-[25rem] p-5 transition hover:bg-white/[0.03] sm:p-7 lg:min-h-[32rem]",
+              children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "mb-8 flex items-start justify-between sm:mb-12", children: [
+                  /* @__PURE__ */ jsxDEV("div", { children: [
+                    /* @__PURE__ */ jsxDEV("span", { className: "grid h-11 w-11 place-items-center rounded-2xl border border-gold/25 bg-gold/10 text-gold", children: /* @__PURE__ */ jsxDEV(Icon, { size: 22 }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                      lineNumber: 71,
+                      columnNumber: 23
+                    }, this) }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                      lineNumber: 70,
+                      columnNumber: 21
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("span", { className: "mt-8 block font-mono text-[10px] uppercase tracking-[0.22em] text-muted sm:text-xs", children: [
+                      "0",
+                      index + 1
+                    ] }, void 0, true, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                      lineNumber: 73,
+                      columnNumber: 21
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                    lineNumber: 69,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "h-px w-20 translate-y-5 bg-gradient-to-r from-gold/60 to-transparent transition group-hover:w-28" }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                    lineNumber: 75,
+                    columnNumber: 19
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                  lineNumber: 68,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("h3", { className: "max-w-xs text-[clamp(2rem,5vw,4rem)] font-semibold leading-[0.9] tracking-[-0.08em] text-bone", children: group.title }, void 0, false, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                  lineNumber: 77,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "mt-8 grid gap-0 border-y border-bone/10 sm:mt-10", children: group.items.map(
+                  (item) => /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between border-b border-bone/10 px-0 py-3 text-sm text-muted last:border-b-0 sm:text-base", children: [
+                    /* @__PURE__ */ jsxDEV("span", { children: item }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                      lineNumber: 81,
+                      columnNumber: 23
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("span", { className: "h-1.5 w-1.5 rounded-full bg-gold/70" }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                      lineNumber: 82,
+                      columnNumber: 23
+                    }, this)
+                  ] }, item, true, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                    lineNumber: 80,
+                    columnNumber: 21
+                  }, this)
+                ) }, void 0, false, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+                  lineNumber: 78,
+                  columnNumber: 17
+                }, this)
+              ]
+            },
+            group.title,
+            true,
+            {
+              fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+              lineNumber: 60,
+              columnNumber: 17
+            },
+            this
+          );
+        }) }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+          lineNumber: 56,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+        lineNumber: 54,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+      lineNumber: 28,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx",
+    lineNumber: 26,
+    columnNumber: 5
+  }, this);
+}
+_c = StackSection;
+var _c;
+$RefreshReg$(_c, "StackSection");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/StackSection.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QTtBQUFBLGdCQUNBLHVCQUFDLFFBQUcsV0FBVSxpR0FBaUdELGdCQUFNUyxTQUFySDtBQUFBO0FBQUE7QUFBQTtBQUFBLHVCQUEySDtBQUFBLGdCQUMzSCx1QkFBQyxTQUFJLFdBQVUsb0RBQ1pULGdCQUFNVSxNQUFNaEI7QUFBQUEsa0JBQUksQ0FBQ2lCLFNBQ2hCLHVCQUFDLFNBQWUsV0FBVSx1SEFDeEI7QUFBQSwyQ0FBQyxVQUFNQSxrQkFBUDtBQUFBO0FBQUE7QUFBQTtBQUFBLDJCQUFZO0FBQUEsb0JBQ1osdUJBQUMsVUFBSyxXQUFVLHlDQUFoQjtBQUFBO0FBQUE7QUFBQTtBQUFBLDJCQUFxRDtBQUFBLHVCQUY3Q0EsTUFBVjtBQUFBO0FBQUE7QUFBQTtBQUFBLHlCQUdBO0FBQUEsZ0JBQ0QsS0FOSDtBQUFBO0FBQUE7QUFBQTtBQUFBLHVCQU9BO0FBQUE7QUFBQTtBQUFBLFlBeEJLWCxNQUFNUztBQUFBQSxZQURiO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUEwQkE7QUFBQSxRQUVKLENBQUMsS0FoQ0Q7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQWlDQTtBQUFBLFdBbkNGO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFvQ0E7QUFBQSxTQTlERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBK0RBO0FBQUEsT0FqRUY7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQWtFQTtBQUVKO0FBQUNHLEtBdEV1Qm5CO0FBQVksSUFBQW1CO0FBQUEsYUFBQUEsSUFBQSIsIm5hbWVzIjpbIm1vdGlvbiIsInN5c3RlbVNpZ25hbHMiLCJzdGFja0dyb3VwcyIsIlNlY3Rpb25IZWFkaW5nIiwiU3RhY2tTZWN0aW9uIiwibWFwIiwic2lnbmFsIiwiSWNvbiIsImljb24iLCJsYWJlbCIsInZhbHVlIiwiZ3JvdXAiLCJpbmRleCIsIm9wYWNpdHkiLCJ5Iiwib25jZSIsIm1hcmdpbiIsImRlbGF5IiwiZHVyYXRpb24iLCJlYXNlIiwidGl0bGUiLCJpdGVtcyIsIml0ZW0iLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJTdGFja1NlY3Rpb24udHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1vdGlvbiB9IGZyb20gJ2ZyYW1lci1tb3Rpb24nO1xuaW1wb3J0IHsgc3lzdGVtU2lnbmFscywgc3RhY2tHcm91cHMgfSBmcm9tICcuLi9kYXRhL3BvcnRmb2xpbyc7XG5pbXBvcnQgU2VjdGlvbkhlYWRpbmcgZnJvbSAnLi9TZWN0aW9uSGVhZGluZyc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFN0YWNrU2VjdGlvbigpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cInN5c3RlbVwiIGNsYXNzTmFtZT1cInNlY3Rpb24tcGFkIHJlbGF0aXZlIG92ZXJmbG93LWhpZGRlbiBweS0xMiBzbTpweS0yOFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIC16LTEwIGJnLVtyYWRpYWwtZ3JhZGllbnQoY2lyY2xlX2F0XzE4JV8yMiUscmdiYSgxMjUsMjExLDI1MiwuMSksdHJhbnNwYXJlbnRfMjhyZW0pLHJhZGlhbC1ncmFkaWVudChjaXJjbGVfYXRfODAlXzY0JSxyZ2JhKDIxNiwxNjgsNzgsLjEyKSx0cmFuc3BhcmVudF8zMHJlbSldXCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXgtYXV0byBtYXgtdy03eGxcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYi04IGdyaWQgZ2FwLTYgc206bWItMTQgc206Z2FwLTggbGc6Z3JpZC1jb2xzLVsuOTVmcl8xLjA1ZnJdIGxnOml0ZW1zLWVuZFwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgZXllYnJvdz1cIlN5c3RlbSBzdGFja1wiXG4gICAgICAgICAgICB0aXRsZT1cIkEgZnJvbnRlbmQgc3VyZmFjZSB3aXRoIGF1dG9tYXRpb24gbG9naWMgYmVoaW5kIGl0LlwiXG4gICAgICAgICAgICBkZXNjcmlwdGlvbj1cIlRoZSBwb3J0Zm9saW8gaXMgc3RydWN0dXJlZCB0byBjb21tdW5pY2F0ZSBhIHNwZWNpZmljIGJ1aWxkZXIgcHJvZmlsZTogcHJvZHVjdCBVSSwgVGVsZWdyYW0gc3lzdGVtcywgUHl0aG9uIHdvcmtmbG93cywgZGF0YSBwZXJzaXN0ZW5jZSBhbmQgZGVwbG95bWVudCBkaXNjaXBsaW5lLlwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJvcmRlci15IGJvcmRlci1ib25lLzEwIHB5LTNcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtMiBtZDpncmlkLWNvbHMtMlwiPlxuICAgICAgICAgICAgICB7c3lzdGVtU2lnbmFscy5tYXAoKHNpZ25hbCkgPT4ge1xuICAgICAgICAgICAgICAgIGNvbnN0IEljb24gPSBzaWduYWwuaWNvbjtcbiAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgPGRpdlxuICAgICAgICAgICAgICAgICAgICBrZXk9e3NpZ25hbC5sYWJlbH1cbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiZmxleCBtaW4tdy0wIGl0ZW1zLWNlbnRlciBnYXAtMiBweC0xIHB5LTIgc206Z2FwLTNcIlxuICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICA8SWNvbiBzaXplPXsxNX0gY2xhc3NOYW1lPVwic2hyaW5rLTAgdGV4dC1nb2xkXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibWluLXctMCB0cnVuY2F0ZSBmb250LW1vbm8gdGV4dC1bOXB4XSB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTZlbV0gdGV4dC1tdXRlZCBzbTp0ZXh0LVsxMHB4XSBzbTp0cmFja2luZy1bMC4xOGVtXVwiPntzaWduYWwubGFiZWx9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzaHJpbmstMCB0ZXh0LXhzIHRleHQtYm9uZSBzbTp0ZXh0LXNtXCI+e3NpZ25hbC52YWx1ZX08L3NwYW4+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgICB9KX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIG92ZXJmbG93LWhpZGRlbiBib3JkZXIteSBib3JkZXItYm9uZS8xMFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCBiZy1bbGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMjQ2LDIzOSwyMjksLjA0KV8xcHgsdHJhbnNwYXJlbnRfMXB4KSxsaW5lYXItZ3JhZGllbnQocmdiYSgyNDYsMjM5LDIyOSwuMDM1KV8xcHgsdHJhbnNwYXJlbnRfMXB4KV0gYmctW2xlbmd0aDo1cmVtXzVyZW1dXCIgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGdyaWQgZGl2aWRlLXkgZGl2aWRlLWJvbmUvMTAgbGc6Z3JpZC1jb2xzLTMgbGc6ZGl2aWRlLXggbGc6ZGl2aWRlLXktMFwiPlxuICAgICAgICAgIHtzdGFja0dyb3Vwcy5tYXAoKGdyb3VwLCBpbmRleCkgPT4ge1xuICAgICAgICAgICAgY29uc3QgSWNvbiA9IGdyb3VwLmljb247XG4gICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgICAgIGtleT17Z3JvdXAudGl0bGV9XG4gICAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiA0MCB9fVxuICAgICAgICAgICAgICAgIHdoaWxlSW5WaWV3PXt7IG9wYWNpdHk6IDEsIHk6IDAgfX1cbiAgICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlLCBtYXJnaW46ICctOTBweCcgfX1cbiAgICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGRlbGF5OiBpbmRleCAqIDAuMDgsIGR1cmF0aW9uOiAwLjcyLCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJncm91cCBtaW4taC1bMjVyZW1dIHAtNSB0cmFuc2l0aW9uIGhvdmVyOmJnLXdoaXRlL1swLjAzXSBzbTpwLTcgbGc6bWluLWgtWzMycmVtXVwiXG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTggZmxleCBpdGVtcy1zdGFydCBqdXN0aWZ5LWJldHdlZW4gc206bWItMTJcIj5cbiAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImdyaWQgaC0xMSB3LTExIHBsYWNlLWl0ZW1zLWNlbnRlciByb3VuZGVkLTJ4bCBib3JkZXIgYm9yZGVyLWdvbGQvMjUgYmctZ29sZC8xMCB0ZXh0LWdvbGRcIj5cbiAgICAgICAgICAgICAgICAgICAgICA8SWNvbiBzaXplPXsyMn0gLz5cbiAgICAgICAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJtdC04IGJsb2NrIGZvbnQtbW9ubyB0ZXh0LVsxMHB4XSB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMjJlbV0gdGV4dC1tdXRlZCBzbTp0ZXh0LXhzXCI+MHtpbmRleCArIDF9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoLXB4IHctMjAgdHJhbnNsYXRlLXktNSBiZy1ncmFkaWVudC10by1yIGZyb20tZ29sZC82MCB0by10cmFuc3BhcmVudCB0cmFuc2l0aW9uIGdyb3VwLWhvdmVyOnctMjhcIiAvPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtYXgtdy14cyB0ZXh0LVtjbGFtcCgycmVtLDV2dyw0cmVtKV0gZm9udC1zZW1pYm9sZCBsZWFkaW5nLVswLjldIHRyYWNraW5nLVstMC4wOGVtXSB0ZXh0LWJvbmVcIj57Z3JvdXAudGl0bGV9PC9oMz5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTggZ3JpZCBnYXAtMCBib3JkZXIteSBib3JkZXItYm9uZS8xMCBzbTptdC0xMFwiPlxuICAgICAgICAgICAgICAgICAge2dyb3VwLml0ZW1zLm1hcCgoaXRlbSkgPT4gKFxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGtleT17aXRlbX0gY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGJvcmRlci1iIGJvcmRlci1ib25lLzEwIHB4LTAgcHktMyB0ZXh0LXNtIHRleHQtbXV0ZWQgbGFzdDpib3JkZXItYi0wIHNtOnRleHQtYmFzZVwiPlxuICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPntpdGVtfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJoLTEuNSB3LTEuNSByb3VuZGVkLWZ1bGwgYmctZ29sZC83MFwiIC8+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgKSl9XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgICAgICk7XG4gICAgICAgICAgfSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9Vc2Vycy9rYXIxbTB2Zi9EZXNrdG9wL2thcmltb3YtY29tbWFuZC1zeXN0ZW0tdjIvc3JjL2NvbXBvbmVudHMvU3RhY2tTZWN0aW9uLnRzeCJ9

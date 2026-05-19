@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kamil Kerimov portfolio preview</title>
+  <desc id="desc">React, TypeScript, Telegram automation and Python systems portfolio.</desc>
+  <rect width="1200" height="630" fill="#050505"/>
+  <circle cx="240" cy="110" r="260" fill="#D8A84E" opacity=".15"/>
+  <circle cx="1010" cy="180" r="280" fill="#7DD3FC" opacity=".13"/>
+  <circle cx="850" cy="610" r="300" fill="#C98A7A" opacity=".10"/>
+  <rect x="74" y="72" width="1052" height="486" rx="44" fill="#0A0A0D" stroke="#F6EFE5" stroke-opacity=".14"/>
+  <rect x="110" y="108" width="94" height="94" rx="25" fill="#16151A" stroke="#D8A84E" stroke-opacity=".55"/>
+  <text x="138" y="171" fill="#F6EFE5" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">K</text>
+  <text x="236" y="147" fill="#D8A84E" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="700" letter-spacing="5">PORTFOLIO SYSTEM</text>
+  <text x="110" y="306" fill="#F6EFE5" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">Kamil Kerimov</text>
+  <text x="114" y="370" fill="#A99F91" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="500">React + TypeScript developer building product UI, Telegram automation and Python systems.</text>
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="700">
+    <rect x="112" y="444" width="178" height="48" rx="24" fill="#D8A84E" fill-opacity=".13" stroke="#D8A84E" stroke-opacity=".42"/>
+    <text x="138" y="476" fill="#D8A84E">React</text>
+    <rect x="310" y="444" width="216" height="48" rx="24" fill="#7DD3FC" fill-opacity=".11" stroke="#7DD3FC" stroke-opacity=".36"/>
+    <text x="336" y="476" fill="#7DD3FC">Telegram</text>
+    <rect x="546" y="444" width="176" height="48" rx="24" fill="#8FE388" fill-opacity=".10" stroke="#8FE388" stroke-opacity=".32"/>
+    <text x="572" y="476" fill="#8FE388">Python</text>
+    <rect x="742" y="444" width="188" height="48" rx="24" fill="#C98A7A" fill-opacity=".12" stroke="#C98A7A" stroke-opacity=".34"/>
+    <text x="768" y="476" fill="#C98A7A">Product</text>
+  </g>
+</svg>

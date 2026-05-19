@@ -1,0 +1,182 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/ContactSection.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=e7832f65"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { ArrowUpRight, Github, Linkedin, Mail } from "/node_modules/.vite/deps/lucide-react.js?v=e7832f65";
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=e7832f65";
+import { profile } from "/src/data/portfolio.ts";
+import MagneticButton from "/src/components/MagneticButton.tsx?t=1779179955639";
+export default function ContactSection({ onOpenCommand }) {
+  return /* @__PURE__ */ jsxDEV("section", { id: "contact", className: "section-pad relative overflow-hidden pb-10 pt-12 sm:pb-12 sm:pt-28", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-x-0 bottom-0 -z-10 h-96 bg-[radial-gradient(circle_at_50%_100%,rgba(216,168,78,.16),transparent_30rem)]" }, void 0, false, {
+      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+      lineNumber: 32,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "mx-auto max-w-7xl", children: [
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 60 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: true, margin: "-90px" },
+          transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+          className: "premium-border overflow-hidden rounded-[1.6rem] p-5 sm:rounded-[2.5rem] sm:p-10 lg:p-14",
+          children: /* @__PURE__ */ jsxDEV("div", { className: "grid gap-7 sm:gap-10 lg:grid-cols-[1fr_.75fr] lg:items-end", children: [
+            /* @__PURE__ */ jsxDEV("div", { children: [
+              /* @__PURE__ */ jsxDEV("p", { className: "font-mono text-[10px] uppercase tracking-[0.26em] text-gold sm:text-xs sm:tracking-[0.32em]", children: "Contact" }, void 0, false, {
+                fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                lineNumber: 43,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("h2", { className: "mt-4 max-w-4xl text-balance text-[2.45rem] font-semibold leading-[0.95] tracking-[-0.075em] text-bone sm:mt-5 sm:text-7xl sm:leading-none sm:tracking-[-0.08em] lg:text-8xl", children: "Let’s build something that does not feel generic." }, void 0, false, {
+                fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                lineNumber: 44,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+              lineNumber: 42,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { children: [
+              /* @__PURE__ */ jsxDEV("p", { className: "text-sm leading-7 text-muted sm:text-lg sm:leading-8", children: "Open for frontend internships, junior roles, focused freelance pages, Telegram automation and product UI experiments." }, void 0, false, {
+                fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                lineNumber: 49,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-5 flex flex-wrap gap-2.5 sm:mt-7 sm:gap-3", children: [
+                /* @__PURE__ */ jsxDEV(MagneticButton, { href: `mailto:${profile.email}`, variant: "primary", cursorLabel: "Email", children: [
+                  /* @__PURE__ */ jsxDEV(Mail, { size: 17 }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                    lineNumber: 54,
+                    columnNumber: 19
+                  }, this),
+                  " Email"
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                  lineNumber: 53,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV(MagneticButton, { href: profile.github, target: "_blank", rel: "noreferrer", variant: "ghost", cursorLabel: "GitHub", children: [
+                  /* @__PURE__ */ jsxDEV(Github, { size: 17 }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                    lineNumber: 57,
+                    columnNumber: 19
+                  }, this),
+                  " GitHub"
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                  lineNumber: 56,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV(MagneticButton, { href: profile.linkedin, target: "_blank", rel: "noreferrer", variant: "ghost", cursorLabel: "LinkedIn", children: [
+                  /* @__PURE__ */ jsxDEV(Linkedin, { size: 17 }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                    lineNumber: 60,
+                    columnNumber: 19
+                  }, this),
+                  " LinkedIn"
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                  lineNumber: 59,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV(MagneticButton, { onClick: onOpenCommand, variant: "panel", cursorLabel: "Command", children: [
+                  "Command ",
+                  /* @__PURE__ */ jsxDEV(ArrowUpRight, { size: 16 }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                    lineNumber: 63,
+                    columnNumber: 27
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                  lineNumber: 62,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+                lineNumber: 52,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+              lineNumber: 48,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+            lineNumber: 41,
+            columnNumber: 11
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+          lineNumber: 34,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("footer", { className: "mt-6 flex flex-col justify-between gap-2.5 border-t border-bone/10 pt-5 font-mono text-[10px] uppercase tracking-[0.16em] text-muted sm:mt-8 sm:flex-row sm:gap-3 sm:pt-6 sm:text-[11px] sm:tracking-[0.22em]", children: [
+        /* @__PURE__ */ jsxDEV("p", { children: [
+          "© 2026 ",
+          profile.name
+        ] }, void 0, true, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+          lineNumber: 71,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "React · TypeScript · Motion · GitHub Pages" }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+          lineNumber: 72,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+        lineNumber: 70,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+      lineNumber: 33,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx",
+    lineNumber: 31,
+    columnNumber: 5
+  }, this);
+}
+_c = ContactSection;
+var _c;
+$RefreshReg$(_c, "ContactSection");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/ContactSection.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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LFFBQVFhO0FBQUFBLGFBQW5CO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBd0I7QUFBQSxRQUN4Qix1QkFBQyxPQUFFLDBEQUFIO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBNkM7QUFBQSxXQUYvQztBQUFBO0FBQUE7QUFBQTtBQUFBLGFBR0E7QUFBQSxTQXhDRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBeUNBO0FBQUEsT0EzQ0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQTRDQTtBQUVKO0FBQUNDLEtBaER1Qlo7QUFBYyxJQUFBWTtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJBcnJvd1VwUmlnaHQiLCJHaXRodWIiLCJMaW5rZWRpbiIsIk1haWwiLCJtb3Rpb24iLCJwcm9maWxlIiwiTWFnbmV0aWNCdXR0b24iLCJDb250YWN0U2VjdGlvbiIsIm9uT3BlbkNvbW1hbmQiLCJvcGFjaXR5IiwieSIsIm9uY2UiLCJtYXJnaW4iLCJkdXJhdGlvbiIsImVhc2UiLCJlbWFpbCIsImdpdGh1YiIsImxpbmtlZGluIiwibmFtZSIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIkNvbnRhY3RTZWN0aW9uLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBcnJvd1VwUmlnaHQsIEdpdGh1YiwgTGlua2VkaW4sIE1haWwgfSBmcm9tICdsdWNpZGUtcmVhY3QnO1xuaW1wb3J0IHsgbW90aW9uIH0gZnJvbSAnZnJhbWVyLW1vdGlvbic7XG5pbXBvcnQgeyBwcm9maWxlIH0gZnJvbSAnLi4vZGF0YS9wb3J0Zm9saW8nO1xuaW1wb3J0IE1hZ25ldGljQnV0dG9uIGZyb20gJy4vTWFnbmV0aWNCdXR0b24nO1xuXG50eXBlIFByb3BzID0ge1xuICBvbk9wZW5Db21tYW5kOiAoKSA9PiB2b2lkO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ29udGFjdFNlY3Rpb24oeyBvbk9wZW5Db21tYW5kIH06IFByb3BzKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJjb250YWN0XCIgY2xhc3NOYW1lPVwic2VjdGlvbi1wYWQgcmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIHBiLTEwIHB0LTEyIHNtOnBiLTEyIHNtOnB0LTI4XCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LXgtMCBib3R0b20tMCAtei0xMCBoLTk2IGJnLVtyYWRpYWwtZ3JhZGllbnQoY2lyY2xlX2F0XzUwJV8xMDAlLHJnYmEoMjE2LDE2OCw3OCwuMTYpLHRyYW5zcGFyZW50XzMwcmVtKV1cIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJteC1hdXRvIG1heC13LTd4bFwiPlxuICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogNjAgfX1cbiAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB5OiAwIH19XG4gICAgICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSwgbWFyZ2luOiAnLTkwcHgnIH19XG4gICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC44LCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgICAgICBjbGFzc05hbWU9XCJwcmVtaXVtLWJvcmRlciBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMS42cmVtXSBwLTUgc206cm91bmRlZC1bMi41cmVtXSBzbTpwLTEwIGxnOnAtMTRcIlxuICAgICAgICA+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdhcC03IHNtOmdhcC0xMCBsZzpncmlkLWNvbHMtWzFmcl8uNzVmcl0gbGc6aXRlbXMtZW5kXCI+XG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LW1vbm8gdGV4dC1bMTBweF0gdXBwZXJjYXNlIHRyYWNraW5nLVswLjI2ZW1dIHRleHQtZ29sZCBzbTp0ZXh0LXhzIHNtOnRyYWNraW5nLVswLjMyZW1dXCI+Q29udGFjdDwvcD5cbiAgICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT1cIm10LTQgbWF4LXctNHhsIHRleHQtYmFsYW5jZSB0ZXh0LVsyLjQ1cmVtXSBmb250LXNlbWlib2xkIGxlYWRpbmctWzAuOTVdIHRyYWNraW5nLVstMC4wNzVlbV0gdGV4dC1ib25lIHNtOm10LTUgc206dGV4dC03eGwgc206bGVhZGluZy1ub25lIHNtOnRyYWNraW5nLVstMC4wOGVtXSBsZzp0ZXh0LTh4bFwiPlxuICAgICAgICAgICAgICAgIExldOKAmXMgYnVpbGQgc29tZXRoaW5nIHRoYXQgZG9lcyBub3QgZmVlbCBnZW5lcmljLlxuICAgICAgICAgICAgICA8L2gyPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIGxlYWRpbmctNyB0ZXh0LW11dGVkIHNtOnRleHQtbGcgc206bGVhZGluZy04XCI+XG4gICAgICAgICAgICAgICAgT3BlbiBmb3IgZnJvbnRlbmQgaW50ZXJuc2hpcHMsIGp1bmlvciByb2xlcywgZm9jdXNlZCBmcmVlbGFuY2UgcGFnZXMsIFRlbGVncmFtIGF1dG9tYXRpb24gYW5kIHByb2R1Y3QgVUkgZXhwZXJpbWVudHMuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC01IGZsZXggZmxleC13cmFwIGdhcC0yLjUgc206bXQtNyBzbTpnYXAtM1wiPlxuICAgICAgICAgICAgICAgIDxNYWduZXRpY0J1dHRvbiBocmVmPXtgbWFpbHRvOiR7cHJvZmlsZS5lbWFpbH1gfSB2YXJpYW50PVwicHJpbWFyeVwiIGN1cnNvckxhYmVsPVwiRW1haWxcIj5cbiAgICAgICAgICAgICAgICAgIDxNYWlsIHNpemU9ezE3fSAvPiBFbWFpbFxuICAgICAgICAgICAgICAgIDwvTWFnbmV0aWNCdXR0b24+XG4gICAgICAgICAgICAgICAgPE1hZ25ldGljQnV0dG9uIGhyZWY9e3Byb2ZpbGUuZ2l0aHVifSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCIgdmFyaWFudD1cImdob3N0XCIgY3Vyc29yTGFiZWw9XCJHaXRIdWJcIj5cbiAgICAgICAgICAgICAgICAgIDxHaXRodWIgc2l6ZT17MTd9IC8+IEdpdEh1YlxuICAgICAgICAgICAgICAgIDwvTWFnbmV0aWNCdXR0b24+XG4gICAgICAgICAgICAgICAgPE1hZ25ldGljQnV0dG9uIGhyZWY9e3Byb2ZpbGUubGlua2VkaW59IHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vcmVmZXJyZXJcIiB2YXJpYW50PVwiZ2hvc3RcIiBjdXJzb3JMYWJlbD1cIkxpbmtlZEluXCI+XG4gICAgICAgICAgICAgICAgICA8TGlua2VkaW4gc2l6ZT17MTd9IC8+IExpbmtlZEluXG4gICAgICAgICAgICAgICAgPC9NYWduZXRpY0J1dHRvbj5cbiAgICAgICAgICAgICAgICA8TWFnbmV0aWNCdXR0b24gb25DbGljaz17b25PcGVuQ29tbWFuZH0gdmFyaWFudD1cInBhbmVsXCIgY3Vyc29yTGFiZWw9XCJDb21tYW5kXCI+XG4gICAgICAgICAgICAgICAgICBDb21tYW5kIDxBcnJvd1VwUmlnaHQgc2l6ZT17MTZ9IC8+XG4gICAgICAgICAgICAgICAgPC9NYWduZXRpY0J1dHRvbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9tb3Rpb24uZGl2PlxuXG4gICAgICAgIDxmb290ZXIgY2xhc3NOYW1lPVwibXQtNiBmbGV4IGZsZXgtY29sIGp1c3RpZnktYmV0d2VlbiBnYXAtMi41IGJvcmRlci10IGJvcmRlci1ib25lLzEwIHB0LTUgZm9udC1tb25vIHRleHQtWzEwcHhdIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNmVtXSB0ZXh0LW11dGVkIHNtOm10LTggc206ZmxleC1yb3cgc206Z2FwLTMgc206cHQtNiBzbTp0ZXh0LVsxMXB4XSBzbTp0cmFja2luZy1bMC4yMmVtXVwiPlxuICAgICAgICAgIDxwPsKpIDIwMjYge3Byb2ZpbGUubmFtZX08L3A+XG4gICAgICAgICAgPHA+UmVhY3QgwrcgVHlwZVNjcmlwdCDCtyBNb3Rpb24gwrcgR2l0SHViIFBhZ2VzPC9wPlxuICAgICAgICA8L2Zvb3Rlcj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cbiJdLCJmaWxlIjoiQzovVXNlcnMva2FyMW0wdmYvRGVza3RvcC9rYXJpbW92LWNvbW1hbmQtc3lzdGVtLXYyL3NyYy9jb21wb25lbnRzL0NvbnRhY3RTZWN0aW9uLnRzeCJ9

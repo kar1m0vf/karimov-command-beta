@@ -1,0 +1,299 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/BootLoader.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=e7832f65"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=e7832f65";
+export default function BootLoader({ progress, phase }) {
+  const circumference = 2 * Math.PI * 54;
+  const dashOffset = circumference - progress / 100 * circumference;
+  return /* @__PURE__ */ jsxDEV(
+    motion.div,
+    {
+      initial: { opacity: 1 },
+      exit: { opacity: 0, y: -18 },
+      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+      className: "fixed inset-0 z-[80] grid place-items-center overflow-hidden bg-ink text-bone",
+      "aria-live": "polite",
+      "aria-label": `Loading portfolio interface: ${phase}`,
+      children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "boot-grid", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+          lineNumber: 40,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "boot-sweep", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+          lineNumber: 41,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+          lineNumber: 42,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan/45 to-transparent" }, void 0, false, {
+          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+          lineNumber: 43,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            initial: { opacity: 0, y: 28, scale: 0.97 },
+            animate: { opacity: 1, y: 0, scale: 1 },
+            transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
+            className: "relative flex w-[min(92vw,420px)] flex-col items-center px-5",
+            children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "relative grid h-56 w-56 place-items-center sm:h-64 sm:w-64", children: [
+                /* @__PURE__ */ jsxDEV(
+                  motion.div,
+                  {
+                    className: "absolute inset-0 rounded-full border border-gold/20",
+                    animate: { rotate: 360 },
+                    transition: { duration: 12, repeat: Infinity, ease: "linear" }
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 52,
+                    columnNumber: 11
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV(
+                  motion.div,
+                  {
+                    className: "absolute inset-5 rounded-full border border-cyan/15",
+                    animate: { rotate: -360 },
+                    transition: { duration: 16, repeat: Infinity, ease: "linear" }
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 57,
+                    columnNumber: 11
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV("svg", { viewBox: "0 0 128 128", className: "absolute inset-0 h-full w-full rotate-[-90deg]", "aria-hidden": "true", children: [
+                  /* @__PURE__ */ jsxDEV("circle", { cx: "64", cy: "64", r: "54", fill: "none", stroke: "rgba(246,239,229,.08)", strokeWidth: "6" }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 63,
+                    columnNumber: 13
+                  }, this),
+                  /* @__PURE__ */ jsxDEV(
+                    motion.circle,
+                    {
+                      cx: "64",
+                      cy: "64",
+                      r: "54",
+                      fill: "none",
+                      stroke: "url(#boot-progress)",
+                      strokeWidth: "6",
+                      strokeLinecap: "round",
+                      strokeDasharray: circumference,
+                      animate: { strokeDashoffset: dashOffset },
+                      transition: { duration: 0.35, ease: "easeOut" }
+                    },
+                    void 0,
+                    false,
+                    {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                      lineNumber: 64,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV("defs", { children: /* @__PURE__ */ jsxDEV("linearGradient", { id: "boot-progress", x1: "0", x2: "1", children: [
+                    /* @__PURE__ */ jsxDEV("stop", { offset: "0%", stopColor: "#D8A84E" }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                      lineNumber: 78,
+                      columnNumber: 17
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("stop", { offset: "55%", stopColor: "#7DD3FC" }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                      lineNumber: 79,
+                      columnNumber: 17
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("stop", { offset: "100%", stopColor: "#8FE388" }, void 0, false, {
+                      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                      lineNumber: 80,
+                      columnNumber: 17
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 77,
+                    columnNumber: 15
+                  }, this) }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 76,
+                    columnNumber: 13
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                  lineNumber: 62,
+                  columnNumber: 11
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  motion.div,
+                  {
+                    className: "premium-border relative grid h-32 w-32 place-items-center rounded-[2rem] sm:h-36 sm:w-36",
+                    animate: { scale: [1, 1.035, 1] },
+                    transition: { duration: 1.8, repeat: Infinity, ease: [0.22, 1, 0.36, 1] },
+                    children: [
+                      /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-3 rounded-[1.45rem] border border-bone/10 bg-ink/55" }, void 0, false, {
+                        fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                        lineNumber: 90,
+                        columnNumber: 13
+                      }, this),
+                      /* @__PURE__ */ jsxDEV(
+                        motion.span,
+                        {
+                          className: "relative text-6xl font-semibold tracking-[-0.08em] text-bone sm:text-7xl",
+                          initial: { opacity: 0, y: 10 },
+                          animate: { opacity: 1, y: 0 },
+                          transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+                          children: "K"
+                        },
+                        void 0,
+                        false,
+                        {
+                          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                          lineNumber: 91,
+                          columnNumber: 13
+                        },
+                        this
+                      ),
+                      /* @__PURE__ */ jsxDEV(
+                        motion.span,
+                        {
+                          className: "absolute right-7 top-7 h-2.5 w-2.5 rounded-full bg-cyan shadow-[0_0_24px_rgba(125,211,252,.8)]",
+                          animate: { opacity: [0.45, 1, 0.45], scale: [0.9, 1.2, 0.9] },
+                          transition: { duration: 1.2, repeat: Infinity, ease: "easeInOut" }
+                        },
+                        void 0,
+                        false,
+                        {
+                          fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                          lineNumber: 99,
+                          columnNumber: 13
+                        },
+                        this
+                      )
+                    ]
+                  },
+                  void 0,
+                  true,
+                  {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 85,
+                    columnNumber: 11
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                lineNumber: 51,
+                columnNumber: 9
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-8 w-full max-w-64", children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "h-1 overflow-hidden rounded-full bg-bone/10", children: /* @__PURE__ */ jsxDEV(
+                  motion.div,
+                  {
+                    className: "h-full rounded-full bg-gradient-to-r from-gold via-cyan to-mint",
+                    animate: { width: `${progress}%` },
+                    transition: { duration: 0.35, ease: "easeOut" }
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 109,
+                    columnNumber: 13
+                  },
+                  this
+                ) }, void 0, false, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                  lineNumber: 108,
+                  columnNumber: 11
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.24em] text-muted", children: [
+                  /* @__PURE__ */ jsxDEV("span", { children: "kar1m0vf" }, void 0, false, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 116,
+                    columnNumber: 13
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { children: [
+                    Math.round(progress),
+                    "%"
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                    lineNumber: 117,
+                    columnNumber: 13
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                  lineNumber: 115,
+                  columnNumber: 11
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+                lineNumber: 107,
+                columnNumber: 9
+              }, this)
+            ]
+          },
+          void 0,
+          true,
+          {
+            fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+            lineNumber: 45,
+            columnNumber: 7
+          },
+          this
+        )
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx",
+      lineNumber: 32,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c = BootLoader;
+var _c;
+$RefreshReg$(_c, "BootLoader");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/kar1m0vf/Desktop/karimov-command-system-v2/src/components/BootLoader.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFBQSx1QkFHQTtBQUFBLG1CQVhGO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBWUE7QUFBQTtBQUFBO0FBQUEsVUExRUY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBMkVBO0FBQUE7QUFBQTtBQUFBLElBeEZGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxFQXlGQTtBQUVKO0FBQUNpQixLQWhHdUJsQjtBQUFVLElBQUFrQjtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJtb3Rpb24iLCJCb290TG9hZGVyIiwicHJvZ3Jlc3MiLCJwaGFzZSIsImNpcmN1bWZlcmVuY2UiLCJNYXRoIiwiUEkiLCJkYXNoT2Zmc2V0Iiwib3BhY2l0eSIsInkiLCJkdXJhdGlvbiIsImVhc2UiLCJzY2FsZSIsInJvdGF0ZSIsInJlcGVhdCIsIkluZmluaXR5Iiwic3Ryb2tlRGFzaG9mZnNldCIsIndpZHRoIiwicm91bmQiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJCb290TG9hZGVyLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtb3Rpb24gfSBmcm9tICdmcmFtZXItbW90aW9uJztcblxudHlwZSBQcm9wcyA9IHtcbiAgcHJvZ3Jlc3M6IG51bWJlcjtcbiAgcGhhc2U6IHN0cmluZztcbn07XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEJvb3RMb2FkZXIoeyBwcm9ncmVzcywgcGhhc2UgfTogUHJvcHMpIHtcbiAgY29uc3QgY2lyY3VtZmVyZW5jZSA9IDIgKiBNYXRoLlBJICogNTQ7XG4gIGNvbnN0IGRhc2hPZmZzZXQgPSBjaXJjdW1mZXJlbmNlIC0gKHByb2dyZXNzIC8gMTAwKSAqIGNpcmN1bWZlcmVuY2U7XG5cbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLmRpdlxuICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAxIH19XG4gICAgICBleGl0PXt7IG9wYWNpdHk6IDAsIHk6IC0xOCB9fVxuICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC43LCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgIGNsYXNzTmFtZT1cImZpeGVkIGluc2V0LTAgei1bODBdIGdyaWQgcGxhY2UtaXRlbXMtY2VudGVyIG92ZXJmbG93LWhpZGRlbiBiZy1pbmsgdGV4dC1ib25lXCJcbiAgICAgIGFyaWEtbGl2ZT1cInBvbGl0ZVwiXG4gICAgICBhcmlhLWxhYmVsPXtgTG9hZGluZyBwb3J0Zm9saW8gaW50ZXJmYWNlOiAke3BoYXNlfWB9XG4gICAgPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJib290LWdyaWRcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJib290LXN3ZWVwXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQteC0wIHRvcC0wIGgtcHggYmctZ3JhZGllbnQtdG8tciBmcm9tLXRyYW5zcGFyZW50IHZpYS1nb2xkLzUwIHRvLXRyYW5zcGFyZW50XCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQteC0wIGJvdHRvbS0wIGgtcHggYmctZ3JhZGllbnQtdG8tciBmcm9tLXRyYW5zcGFyZW50IHZpYS1jeWFuLzQ1IHRvLXRyYW5zcGFyZW50XCIgLz5cblxuICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAyOCwgc2NhbGU6IDAuOTcgfX1cbiAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwLCBzY2FsZTogMSB9fVxuICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjc1LCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgICAgY2xhc3NOYW1lPVwicmVsYXRpdmUgZmxleCB3LVttaW4oOTJ2dyw0MjBweCldIGZsZXgtY29sIGl0ZW1zLWNlbnRlciBweC01XCJcbiAgICAgID5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBncmlkIGgtNTYgdy01NiBwbGFjZS1pdGVtcy1jZW50ZXIgc206aC02NCBzbTp3LTY0XCI+XG4gICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItZ29sZC8yMFwiXG4gICAgICAgICAgICBhbmltYXRlPXt7IHJvdGF0ZTogMzYwIH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAxMiwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogJ2xpbmVhcicgfX1cbiAgICAgICAgICAvPlxuICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC01IHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWN5YW4vMTVcIlxuICAgICAgICAgICAgYW5pbWF0ZT17eyByb3RhdGU6IC0zNjAgfX1cbiAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDE2LCByZXBlYXQ6IEluZmluaXR5LCBlYXNlOiAnbGluZWFyJyB9fVxuICAgICAgICAgIC8+XG4gICAgICAgICAgPHN2ZyB2aWV3Qm94PVwiMCAwIDEyOCAxMjhcIiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIGgtZnVsbCB3LWZ1bGwgcm90YXRlLVstOTBkZWddXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+XG4gICAgICAgICAgICA8Y2lyY2xlIGN4PVwiNjRcIiBjeT1cIjY0XCIgcj1cIjU0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJyZ2JhKDI0NiwyMzksMjI5LC4wOClcIiBzdHJva2VXaWR0aD1cIjZcIiAvPlxuICAgICAgICAgICAgPG1vdGlvbi5jaXJjbGVcbiAgICAgICAgICAgICAgY3g9XCI2NFwiXG4gICAgICAgICAgICAgIGN5PVwiNjRcIlxuICAgICAgICAgICAgICByPVwiNTRcIlxuICAgICAgICAgICAgICBmaWxsPVwibm9uZVwiXG4gICAgICAgICAgICAgIHN0cm9rZT1cInVybCgjYm9vdC1wcm9ncmVzcylcIlxuICAgICAgICAgICAgICBzdHJva2VXaWR0aD1cIjZcIlxuICAgICAgICAgICAgICBzdHJva2VMaW5lY2FwPVwicm91bmRcIlxuICAgICAgICAgICAgICBzdHJva2VEYXNoYXJyYXk9e2NpcmN1bWZlcmVuY2V9XG4gICAgICAgICAgICAgIGFuaW1hdGU9e3sgc3Ryb2tlRGFzaG9mZnNldDogZGFzaE9mZnNldCB9fVxuICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjM1LCBlYXNlOiAnZWFzZU91dCcgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8ZGVmcz5cbiAgICAgICAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPVwiYm9vdC1wcm9ncmVzc1wiIHgxPVwiMFwiIHgyPVwiMVwiPlxuICAgICAgICAgICAgICAgIDxzdG9wIG9mZnNldD1cIjAlXCIgc3RvcENvbG9yPVwiI0Q4QTg0RVwiIC8+XG4gICAgICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PVwiNTUlXCIgc3RvcENvbG9yPVwiIzdERDNGQ1wiIC8+XG4gICAgICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PVwiMTAwJVwiIHN0b3BDb2xvcj1cIiM4RkUzODhcIiAvPlxuICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PlxuICAgICAgICAgICAgPC9kZWZzPlxuICAgICAgICAgIDwvc3ZnPlxuXG4gICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cInByZW1pdW0tYm9yZGVyIHJlbGF0aXZlIGdyaWQgaC0zMiB3LTMyIHBsYWNlLWl0ZW1zLWNlbnRlciByb3VuZGVkLVsycmVtXSBzbTpoLTM2IHNtOnctMzZcIlxuICAgICAgICAgICAgYW5pbWF0ZT17eyBzY2FsZTogWzEsIDEuMDM1LCAxXSB9fVxuICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMS44LCByZXBlYXQ6IEluZmluaXR5LCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTMgcm91bmRlZC1bMS40NXJlbV0gYm9yZGVyIGJvcmRlci1ib25lLzEwIGJnLWluay81NVwiIC8+XG4gICAgICAgICAgICA8bW90aW9uLnNwYW5cbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicmVsYXRpdmUgdGV4dC02eGwgZm9udC1zZW1pYm9sZCB0cmFja2luZy1bLTAuMDhlbV0gdGV4dC1ib25lIHNtOnRleHQtN3hsXCJcbiAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAxMCB9fVxuICAgICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAgfX1cbiAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC43LCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgS1xuICAgICAgICAgICAgPC9tb3Rpb24uc3Bhbj5cbiAgICAgICAgICAgIDxtb3Rpb24uc3BhblxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSByaWdodC03IHRvcC03IGgtMi41IHctMi41IHJvdW5kZWQtZnVsbCBiZy1jeWFuIHNoYWRvdy1bMF8wXzI0cHhfcmdiYSgxMjUsMjExLDI1MiwuOCldXCJcbiAgICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiBbMC40NSwgMSwgMC40NV0sIHNjYWxlOiBbMC45LCAxLjIsIDAuOV0gfX1cbiAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMS4yLCByZXBlYXQ6IEluZmluaXR5LCBlYXNlOiAnZWFzZUluT3V0JyB9fVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtOCB3LWZ1bGwgbWF4LXctNjRcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImgtMSBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1mdWxsIGJnLWJvbmUvMTBcIj5cbiAgICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cImgtZnVsbCByb3VuZGVkLWZ1bGwgYmctZ3JhZGllbnQtdG8tciBmcm9tLWdvbGQgdmlhLWN5YW4gdG8tbWludFwiXG4gICAgICAgICAgICAgIGFuaW1hdGU9e3sgd2lkdGg6IGAke3Byb2dyZXNzfSVgIH19XG4gICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuMzUsIGVhc2U6ICdlYXNlT3V0JyB9fVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTQgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGZvbnQtbW9ubyB0ZXh0LVsxMHB4XSB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMjRlbV0gdGV4dC1tdXRlZFwiPlxuICAgICAgICAgICAgPHNwYW4+a2FyMW0wdmY8L3NwYW4+XG4gICAgICAgICAgICA8c3Bhbj57TWF0aC5yb3VuZChwcm9ncmVzcyl9JTwvc3Bhbj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L21vdGlvbi5kaXY+XG4gICAgPC9tb3Rpb24uZGl2PlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9Vc2Vycy9rYXIxbTB2Zi9EZXNrdG9wL2thcmltb3YtY29tbWFuZC1zeXN0ZW0tdjIvc3JjL2NvbXBvbmVudHMvQm9vdExvYWRlci50c3gifQ==
