@@ -22,6 +22,10 @@ import {
   Zap
 } from 'lucide-react';
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+const siteUrl = 'https://kar1m0vf.github.io/karimov-command-beta/';
+const repoUrl = 'https://github.com/kar1m0vf/karimov-command-beta';
+
 export type LinkItem = {
   label: string;
   href: string;
@@ -80,9 +84,9 @@ export const profile = {
   location: 'Azerbaijan',
   email: 'kamilkarimov16092006@gmail.com',
   github: 'https://github.com/kar1m0vf',
-  portfolioRepo: 'https://github.com/kar1m0vf/kar1m0vf.github.io',
+  portfolioRepo: repoUrl,
   linkedin: 'https://linkedin.com/in/kamil-kerimov',
-  site: 'https://kar1m0vf.github.io/',
+  site: siteUrl,
   intro:
     'React + TypeScript developer building product interfaces, Telegram automation and practical Python systems.',
   compactBio:
@@ -216,9 +220,9 @@ export const projects: Project[] = [
     accent: 'cyan',
     visualMode: 'gallery',
     images: [
-      { src: '/projects/blaster/preview-menu.png', alt: 'Blaster main menu interface', label: 'Menu system' },
-      { src: '/projects/blaster/preview-battle.png', alt: 'Blaster battle wave gameplay', label: 'Wave combat' },
-      { src: '/projects/blaster/preview-boss.png', alt: 'Blaster boss phase gameplay', label: 'Boss phase' }
+      { src: publicAsset('projects/blaster/preview-menu.png'), alt: 'Blaster main menu interface', label: 'Menu system' },
+      { src: publicAsset('projects/blaster/preview-battle.png'), alt: 'Blaster battle wave gameplay', label: 'Wave combat' },
+      { src: publicAsset('projects/blaster/preview-boss.png'), alt: 'Blaster boss phase gameplay', label: 'Boss phase' }
     ]
   },
   {
@@ -262,8 +266,8 @@ export const projects: Project[] = [
       'Framer Motion for transitions while keeping the page mostly DOM/CSS-based.'
     ],
     links: [
-      { label: 'Live site', href: 'https://kar1m0vf.github.io/', icon: Globe2 },
-      { label: 'Source repo', href: 'https://github.com/kar1m0vf/kar1m0vf.github.io', icon: Github }
+      { label: 'Live site', href: siteUrl, icon: Globe2 },
+      { label: 'Source repo', href: repoUrl, icon: Github }
     ],
     accent: 'green',
     visualMode: 'system'

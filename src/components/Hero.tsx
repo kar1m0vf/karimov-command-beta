@@ -5,6 +5,8 @@ import { profile, projects } from '../data/portfolio';
 import MagneticButton from './MagneticButton';
 import type { Project } from '../data/portfolio';
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
 type Props = {
   onOpenCommand: () => void;
   onOpenProject: (project: Project) => void;
@@ -125,7 +127,7 @@ export default function Hero({ onOpenCommand, onOpenProject }: Props) {
             whileHover={{ y: -8, rotate: -4 }}
             className="hero-media-card absolute left-3 top-5 z-20 w-[62%] overflow-hidden rounded-[1.35rem] border border-bone/[0.12] bg-black/50 text-left shadow-[0_28px_80px_rgba(0,0,0,.42)] sm:left-7 sm:top-8 sm:w-[58%] xl:w-[54%]"
           >
-            <img src="/projects/blaster/preview-battle.png" alt="Blaster Game battle preview" className="h-44 w-full object-cover sm:h-56 xl:h-72" />
+            <img src={publicAsset('projects/blaster/preview-battle.png')} alt="Blaster Game battle preview" className="h-44 w-full object-cover sm:h-56 xl:h-72" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/70 to-transparent p-3 sm:p-4">
               <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-cyan">playable build</p>
               <p className="mt-1 text-sm font-semibold text-bone sm:text-base">Blaster Game</p>
@@ -164,7 +166,7 @@ export default function Hero({ onOpenCommand, onOpenProject }: Props) {
             whileHover={{ y: -8, rotate: 2 }}
             className="hero-media-card absolute bottom-8 left-8 z-10 hidden w-[36%] overflow-hidden rounded-[1.25rem] border border-bone/10 bg-black/55 shadow-[0_24px_70px_rgba(0,0,0,.38)] sm:block xl:bottom-10"
           >
-            <img src="/projects/blaster/preview-boss.png" alt="Blaster boss phase preview" className="h-36 w-full object-cover xl:h-44" />
+            <img src={publicAsset('projects/blaster/preview-boss.png')} alt="Blaster boss phase preview" className="h-36 w-full object-cover xl:h-44" />
           </motion.button>
 
           <motion.a

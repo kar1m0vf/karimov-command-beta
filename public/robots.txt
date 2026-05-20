@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kar1m0vf.github.io/sitemap.xml
+Sitemap: https://kar1m0vf.github.io/karimov-command-beta/sitemap.xml

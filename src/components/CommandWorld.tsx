@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
 type CameraKeyframe = {
   progress: number;
   position: THREE.Vector3;
@@ -259,8 +261,8 @@ export default function CommandWorld() {
     };
 
     const loader = new THREE.TextureLoader();
-    const battleTexture = loader.load('/projects/blaster/preview-battle.png');
-    const bossTexture = loader.load('/projects/blaster/preview-boss.png');
+    const battleTexture = loader.load(publicAsset('projects/blaster/preview-battle.png'));
+    const bossTexture = loader.load(publicAsset('projects/blaster/preview-boss.png'));
     battleTexture.colorSpace = THREE.SRGBColorSpace;
     bossTexture.colorSpace = THREE.SRGBColorSpace;
 
